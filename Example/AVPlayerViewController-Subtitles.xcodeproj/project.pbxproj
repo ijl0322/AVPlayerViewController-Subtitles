@@ -15,6 +15,8 @@
 		4B4FC9731C2A9DB5002AE636 /* trailer_720p.mov in Resources */ = {isa = PBXBuildFile; fileRef = 4B4FC9711C2A9DB5002AE636 /* trailer_720p.mov */; };
 		4B4FC9741C2A9DB5002AE636 /* trailer_720p.srt in Resources */ = {isa = PBXBuildFile; fileRef = 4B4FC9721C2A9DB5002AE636 /* trailer_720p.srt */; };
 		4B7F8DFC1C2A9F6D00DC949D /* Subtitles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B7F8DFB1C2A9F6D00DC949D /* Subtitles.swift */; };
+		7A7AC5FA25EFC14600DC53A9 /* SubtitlesAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AC5F925EFC14600DC53A9 /* SubtitlesAVPlayer.swift */; };
+		7A7AC5FE25EFC38F00DC53A9 /* playerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A7AC5FD25EFC38F00DC53A9 /* playerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		4B4FC9711C2A9DB5002AE636 /* trailer_720p.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = trailer_720p.mov; sourceTree = "<group>"; };
 		4B4FC9721C2A9DB5002AE636 /* trailer_720p.srt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trailer_720p.srt; sourceTree = "<group>"; };
 		4B7F8DFB1C2A9F6D00DC949D /* Subtitles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Subtitles.swift; path = ../../Subtitles.swift; sourceTree = "<group>"; };
+		7A7AC5F925EFC14600DC53A9 /* SubtitlesAVPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubtitlesAVPlayer.swift; sourceTree = "<group>"; };
+		7A7AC5FD25EFC38F00DC53A9 /* playerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = playerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 				4B4FC9601C2A9D60002AE636 /* Assets.xcassets */,
 				4B4FC9621C2A9D60002AE636 /* LaunchScreen.storyboard */,
 				4B4FC9651C2A9D60002AE636 /* Info.plist */,
+				7A7AC5FD25EFC38F00DC53A9 /* playerView.swift */,
 			);
 			path = "AVPlayerViewController-Subtitles";
 			sourceTree = "<group>";
@@ -76,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				4B7F8DFB1C2A9F6D00DC949D /* Subtitles.swift */,
+				7A7AC5F925EFC14600DC53A9 /* SubtitlesAVPlayer.swift */,
 			);
 			name = "AVPlayerViewController-Subtitles";
 			sourceTree = "<group>";
@@ -130,6 +136,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -164,7 +171,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B7F8DFC1C2A9F6D00DC949D /* Subtitles.swift in Sources */,
+				7A7AC5FA25EFC14600DC53A9 /* SubtitlesAVPlayer.swift in Sources */,
 				4B4FC96D1C2A9D91002AE636 /* ViewController.swift in Sources */,
+				7A7AC5FE25EFC38F00DC53A9 /* playerView.swift in Sources */,
 				4B4FC95A1C2A9D60002AE636 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,11 +299,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "AVPlayerViewController-Subtitles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mhergon.AVPlayerViewController-Subtitles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -303,11 +313,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "AVPlayerViewController-Subtitles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mhergon.AVPlayerViewController-Subtitles";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
